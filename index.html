@@ -292,7 +292,7 @@ nav .header-link:hover {
 }
     .container {
         position: fixed;
-        top: 100px; /* Adjust top position as needed */
+        top: 0px; /* Adjust top position as needed */
         width: 100%;
         z-index: 1; /* Ensure the container is above the navigation */
         background-color: rgba(255, 255, 255, 0.8); /* Adjust background color and opacity as needed */
@@ -322,29 +322,6 @@ nav .header-link:hover {
       <iframe src="https://script.google.com/macros/s/AKfycbyvF_JYtFL9p7rVkY5eDa5xdPZj4T87XF8lwaLqfzIpE5T1uNrOpr_HKYlD4rpZ3cU/exec"></iframe>
     </div>
   </div>
-<script>
-const sidebar = document.getElementById("sidebar");
-const menuButton = document.getElementById("menu-button");
-const closeButton = document.getElementById("close-button");
 
-function openMenu() {
-  sidebar.style.display = "flex";
-  sidebar.style.animation = "";
-  sidebar.style.animation = "sidebarIn 1s 0s forwards";
-}
-
-function closeMenu() {
-  sidebar.style.animation = "";
-  sidebar.style.animation = "sidebarOut 1s 0s forwards";
-  setTimeout(close, 1200);
-}
-
-function close() {
-  sidebar.style.display = "none";
-}
-
-menuButton.addEventListener("click", openMenu);
-closeButton.addEventListener("click", closeMenu);
-</script>
 </body>
 </html>
